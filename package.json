@@ -1,0 +1,23 @@
+{
+  "name": "@writetome51/get-adjacent-items-replacer",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/get-adjacent-items-replacer.git"
+  },
+  "keywords": [
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/get-adjacent-items-replacer/issues"
+  },
+  "homepage": "https://github.com/writetome51/get-adjacent-items-replacer#readme",
+  "dependencies": {
+
+  }
+}
