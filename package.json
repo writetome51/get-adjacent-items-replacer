@@ -10,6 +10,15 @@
     "url": "git+https://github.com/writetome51/get-adjacent-items-replacer.git"
   },
   "keywords": [
+    "array",
+    "manipulation",
+    "replace",
+    "replacer",
+    "splice",
+    "alternative",
+    "function",
+    "functional",
+    "programming"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
@@ -18,6 +27,8 @@
   },
   "homepage": "https://github.com/writetome51/get-adjacent-items-replacer#readme",
   "dependencies": {
-
+    "error-if-array-too-short-to-meet-adjacent-items-request": "^2.0.0",
+    "error-if-index-how-many-or-array-are-not-valid": "^2.0.1",
+    "error-if-not-array": "^2.0.0"
   }
 }
