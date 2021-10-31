@@ -1,5 +1,5 @@
 import {validateAdjacentItemsOperationArgs} from './validate.js';
-import {errorIfNotArray} from 'error-if-not-array';
+
 
 /**********************
 Returns a replacer function that is a more reliable alternative to simply calling
@@ -8,13 +8,12 @@ checking if `startingIndex` is an existing index, and that
 `startingIndex + numItemsToReplace` is not greater than `array.length`.
 The replacer modifies the array and returns void.
 `startingIndex` can be negative or positive.
-***********************/
+ ***********************/
 
 
 export const getAdjacentItemsReplacer = (array) => {
 	return (startingIndex, numItemsToReplace, newItems) => {
 		validateAdjacentItemsOperationArgs(startingIndex, numItemsToReplace, array);
-		errorIfNotArray(newItems);
 		array.splice(startingIndex, numItemsToReplace, ...newItems);
 	};
 }
