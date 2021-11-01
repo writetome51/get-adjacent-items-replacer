@@ -1,4 +1,5 @@
-import {validateAdjacentItemsOperationArgs} from './validate.js';
+import {validateAdjacentItemsOperationArgs}
+	from '@writetome51/validate-adjacent-items-operation-args';
 
 
 /**********************
