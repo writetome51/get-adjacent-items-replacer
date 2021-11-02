@@ -1,5 +1,5 @@
-import {validateAdjacentItemsOperationArgs} from './validate.js';
-import {errorIfNotArray} from 'error-if-not-array';
+import {validateAdjacentItemsOperationArgs}
+	from '@writetome51/validate-adjacent-items-operation-args';
 
 /**********************
 Returns a replacer function that is a more reliable alternative to simply calling
@@ -14,7 +14,6 @@ The replacer modifies the array and returns void.
 export const getAdjacentItemsReplacer = (array) => {
 	return (startingIndex, numItemsToReplace, newItems) => {
 		validateAdjacentItemsOperationArgs(startingIndex, numItemsToReplace, array);
-		errorIfNotArray(newItems);
 		array.splice(startingIndex, numItemsToReplace, ...newItems);
 	};
 }
