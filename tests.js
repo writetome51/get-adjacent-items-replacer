@@ -21,11 +21,11 @@ console.log(users); // ['user1', 'user4', 'user5']
 replaceAdjacentUsers(0, 1, ['user6']);
 console.log(users); // ['user6', 'user4', 'user5']
 
-replaceAdjacentUsers(0, 1, []);
+replaceAdjacentUsers(0, 1, '');
 console.log(users); // ['user4', 'user5']
 
-replaceAdjacentUsers(0, 1, ['']);
-console.log(users); // ['', 'user5']
+replaceAdjacentUsers(0,1,['']);
+console.log(users); // ['user6', 'user4', 'user5']
 
 if (1) console.log('test 1 passed');
 else console.log('test 1 FAILED');
