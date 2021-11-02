@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/writetome51/get-adjacent-items-replacer.git"
@@ -27,6 +28,9 @@
   },
   "homepage": "https://github.com/writetome51/get-adjacent-items-replacer#readme",
   "dependencies": {
-    "@writetome51/validate-adjacent-items-operation-args": ">=0.0.1"
+    "@writetome51/array-get-head-tail": ">=2.0.0",
+    "@writetome51/array-insert-at": ">=4.0.0",
+    "@writetome51/array-remove-adjacent-at": ">=2.0.0",
+    "@writetome51/array-replace-adjacent-at": ">=3.0.0"
   }
 }

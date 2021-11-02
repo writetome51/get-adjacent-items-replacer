@@ -1,6 +1,6 @@
-export declare function getAdjacentItemsReplacer<T>(
+export declare const getAdjacentItemsReplacer: <T>(
 	array: T[]
-): (
+) => (
 	startingIndex: number,
 	numItemsToReplace: number,
 	newItems: T[]
