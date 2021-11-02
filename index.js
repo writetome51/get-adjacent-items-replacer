@@ -25,24 +25,9 @@ export const getAdjacentItemsReplacer = (array) => {
 
 		const numNewItems = newItems.length;
 
-		if (numNewItems > numItemsToReplace) increaseArrayLength();
-		else if (numNewItems < numItemsToReplace) decreaseArrayLength();
+		if (numNewItems !== numItemsToReplace)
+			array.splice(startingIndex, numItemsToReplace, ...newItems);
 
 		else replaceAdjacentAt(startingIndex, newItems, array);
-
-
-		function increaseArrayLength() {
-			const [replacementItems, insertItems] =
-				getSplitAfterIndex(numItemsToReplace - 1, newItems);
-
-			replaceAdjacentAt(startingIndex, replacementItems, array);
-			insertAt(startingIndex + replacementItems.length, insertItems, array);
-		}
-
-
-		function decreaseArrayLength() {
-			removeAdjacentAt(startingIndex, numItemsToReplace - numNewItems, array);
-			if (numNewItems > 0) replaceAdjacentAt(startingIndex, newItems, array);
-		}
 	};
 }

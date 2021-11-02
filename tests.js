@@ -35,8 +35,8 @@ let nums = [1, 2, 3, 4, 5, 6];
 const replacer = getAdjacentItemsReplacer(nums)
 let ms = Date.now();
 let i = -1;
-while (++i < 8000000) {
-	replacer(0, 3, [10, 11]);
+while (++i < 10000000) {
+	replacer(0, 2, [10, 11]);
 	if (nums.length < 3) nums.push(1);
 }
 ms = Date.now() - ms;
@@ -46,8 +46,8 @@ console.log(ms);
 nums = [1, 2, 3, 4, 5, 6];
  ms = Date.now();
  i = -1;
-while (++i < 8000000) {
-	nums.splice(0, 3, 10, 11);
+while (++i < 10000000) {
+	nums.splice(0, 2, 10, 11);
 	if (nums.length < 3) nums.push(1);
 }
 ms = Date.now() - ms;
